@@ -1,0 +1,212 @@
+/* Predeifne css colors */
+:root {
+	--orange-color: #DA722C;
+	--dark-blue-color: #023047;
+	--dark-color: #070917;
+	--light-color: #E8F7FB;
+	--light-blue-color: #6F7DFB;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+/* it used to create padding and border while giving the width */
+
+body {
+	margin: 0;
+	font-family: 'Poppins', sans-serif;
+	background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrapper {
+	max-width: 1134px;
+	margin: 0 auto;
+	position: relative;
+	top: -20px;
+
+}
+
+/* Button styling */
+.btn {
+	/* display: inline-block; */
+	display: revert;
+	padding: 16px 32px;
+	border-radius: 24px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.btn.dark {
+	background: var(--dark-blue-color);
+}
+
+.btn.light {
+	background: var(--orange-color);
+	position: relative;
+	top: 20px;
+}
+
+.btn.enroll-icon::before {
+	content: url(images/pencil.svg);
+	position: relative;
+	top: 9.2px;
+	left: -5px;
+	/* transform: translateY(-62%); */
+}
+
+/* Header Part */
+header {
+
+	/* background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%); */
+	width: 100%;
+	/* height: 100vh; */
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	/* position:fixed; */
+	/* width: 113px; */
+	padding: 36px 0;
+	top: 0;
+	z-index: 100;
+}
+
+.logo {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 40px;
+	color: #fff;
+}
+
+ul {
+	display: flex;
+	align-items: center;
+	gap: 60px;
+	list-style: none;
+	margin: 0;
+}
+
+ul,
+li,
+a,
+nav {
+	font-weight: bold;
+	font-size: 16px;
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.hero-section {
+
+	display: flex;
+	max-width: 1134px;
+	margin: 0 auto;
+}
+
+.right {
+	position: relative;
+	left: 15%;
+}
+
+.left {
+	width: 40%;
+	color: #fff;
+}
+
+.left h1 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 62.5px;
+}
+
+.left p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 32px;
+
+}
+
+.student-enrolled {
+	position: relative;
+    top: 6.4pc;
+    left: 85px;
+
+}
+
+.overall-rating {
+	position: relative;
+    top: 13pc;
+    left: 40px;
+}
+
+
+.student-enrolled,
+.overall-rating {
+	background: url(images/r2.png);
+	background-position: center;
+	background-size: 100% 100%;
+	width: 206px;
+	height: 90px;
+	text-align: center;
+}
+
+.student-enrolled::before,
+.overall-rating::before {
+	content: url(images/r1.png);
+	position: absolute;
+	z-index: -1;
+	top: 2px;
+    transform: translateX(-96px);
+}
+
+
+.content h3 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 45px;
+}
+
+.stn-enrol p {
+	position: relative;
+	top: -35px;
+}
+
+.stn-enrol h3 {
+	padding-top: 8px;
+}
+
+.ovr-rating div {
+	display: inline-flex;
+	position: relative;
+	top: -25px;
+}
+
+.ovr-rating div img {
+	position: relative;
+	left: 8px;
+	top: -5px;
+}
+
+.ovr-rating p {
+	position: relative;
+	top: -5pc;
+}
+
+
+.right img {
+	width: 387px;
+	position: inherit;
+	top: 5px;
+}
